@@ -22,7 +22,7 @@ fn main() {
     let list : Vec<Computer> = res.unwrap();
     let arc_list = Arc::new(Mutex::new(list));
 
-    let listener = TcpListener::bind("127.0.0.1:44844").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:44844").unwrap();
 
     let pool = ThreadPool::new(4);
 
