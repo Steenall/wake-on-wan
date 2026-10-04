@@ -4,6 +4,10 @@ version = "0.2.0"
 authors = ["Steenall"]
 edition = "2024"
 
+[[bin]]
+name = "wake_on_wan"
+path = "src/bin/main.rs"
+
 [dependencies]
 csv = "1.4.0"
 serde = { version = "1.0", features = ["derive"] }
